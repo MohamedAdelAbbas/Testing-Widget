@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "testing-widgets",
-    "version": "1.1.1",
+    "version": "1..0.0",
     "name": "Testing widgets",
     "description": "A collection of widgets for test visualization",
     "publisher": "mohamedadelabbas",
@@ -9,17 +9,13 @@
     "tags": [
         "testing",
         "end-to-end",
-        "nightly",
-        "flaky",
-        "test",
-        "tests",
         "dashboards",
         "charts",
         "table"
     ],
     "repository": {
         "type": "git",
-        "uri": "https://github.com/ibvhefe/TestingWidgets"
+        "uri": "https://github.com/MohamedAdelAbbas/Testing-Widget"
     },
     "content": {
         "details": {
