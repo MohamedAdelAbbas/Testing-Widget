@@ -1,1 +1,41 @@
 *.vsix
+
+*.vsix
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment variables
+.env
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore dependency directories
+jspm_packages/
+bower_components/
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore yarn files
+yarn-error.log
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Ignore local development files
+.local/

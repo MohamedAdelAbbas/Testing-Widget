@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "testing-widgets",
+    "id": "AzurePipelineWidgetsTesting",
     "version": "1.0.0",
-    "name": "Testing widgets",
+    "name": "AzurePipelineWidgetsTesting",
     "description": "A collection of widgets for test visualization",
     "publisher": "mohamedadelabbas",
     "categories": ["Azure Boards"],
@@ -40,7 +40,7 @@
                 ".nightly-chart.Configuration"
             ],
             "properties": {
-                "name": "Nightly Test Runs",
+                "name": "Azure pipeline Test Runs",
                 "isNameConfigurable": true,
                 "description": "Displays a chart of nightly test results",
                 "catalogIconUrl": "img/logo.png",
@@ -89,77 +89,12 @@
             "type": "ms.vss-dashboards-web.widget-configuration",
             "targets": [ "ms.vss-dashboards-web.widget-configuration" ],
             "properties": {
-                "name": "Nightly Test Runs Configuration",
+                "name": "Azure pipeline Test Runs Configuration",
                 "description": "Configures the nightly chart widget",
                 "uri": "nightly-configuration.html"
             }
-        },
-        {
-            "id": "flaky-tests-table",
-            "type": "ms.vss-dashboards-web.widget",
-            "targets": [
-                "ms.vss-dashboards-web.widget-catalog",
-                ".nightly-chart.Configuration"
-            ],
-            "properties": {
-                "name": "Flaky test table",
-                "isNameConfigurable": true,
-                "description": "Displays a table of flaky tests",
-                "catalogIconUrl": "img/flakyTestIcon.png",
-                "uri": "flaky-table.html",
-                "supportedSizes": [
-                    {
-                        "rowSpan": 2,
-                        "columnSpan": 2
-                    },
-                    {
-                        "rowSpan": 2,
-                        "columnSpan": 3
-                    },
-                    {
-                        "rowSpan": 2,
-                        "columnSpan": 4
-                    },
-                    {
-                        "rowSpan": 3,
-                        "columnSpan": 2
-                    },
-                    {
-                        "rowSpan": 3,
-                        "columnSpan": 3
-                    },
-                    {
-                        "rowSpan": 3,
-                        "columnSpan": 4
-                    },
-                    {
-                        "rowSpan": 4,
-                        "columnSpan": 2
-                    },
-                    {
-                        "rowSpan": 4,
-                        "columnSpan": 3
-                    },
-                    {
-                        "rowSpan": 4,
-                        "columnSpan": 4
-                    }
-                ],
-                "supportedScopes": [
-                    "project_team"
-                ]
-            }
-        },
-        {
-            "id": "flaky-tests-table.Configuration",
-            "type": "ms.vss-dashboards-web.widget-configuration",
-            "targets": [ "ms.vss-dashboards-web.widget-configuration" ],
-            "properties": {
-                "name": "Flaky test table configuration",
-                "description": "Configures the flaky table widget",
-                "uri": "flaky-configuration.html"
-            }
         }
+       
     ],
     "files": [
         {
@@ -168,10 +103,6 @@
         },
         {
             "path": "nightly-configuration.html",
-            "addressable": true
-        },
-        {
-            "path": "flaky-table.html",
             "addressable": true
         },
         {
@@ -199,6 +130,6 @@
     ],
     "galleryFlags": [
         "Preview",
-        "Public"
+        "private"
     ]
 }
